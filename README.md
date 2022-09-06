@@ -11,12 +11,12 @@ Point of the experiment was to create algorithm that is capable of enhancing the
 ## Training and performance
 For the main task of image resolution enhancement by the scale of 2 the five different datasets' sizes were used (315, 450, 1350, 2700, 4500 images). Thanks to that the figure that shows how resolution enhancement is getting better (PSNR [dB]) over bigger datasets were created:
 
-![alt text](https://github.com/KamilBartosik/SRCNN_Super-ResolutionConvolutionalNeuralNetwork/blob/main/Dataset_size.png "Size of the dataset")
+![alt text](https://github.com/KamilBartosik/SRCNN_Super-ResolutionConvolutionalNeuralNetwork/blob/main/training_figures/Dataset_size.png "Size of the dataset")
 
 The process of the best performing training with scale of 2 and dataset of 4500 images (600x450 px):
 
-![alt text](https://github.com/KamilBartosik/SRCNN_Super-ResolutionConvolutionalNeuralNetwork/blob/main/Training_MSE.png "SRCNN training (MSE per epoch)")
-![alt text](https://github.com/KamilBartosik/SRCNN_Super-ResolutionConvolutionalNeuralNetwork/blob/main/Training_PSNR.png "SRCNN training (PSNR per epoch)")
+![alt text](https://github.com/KamilBartosik/SRCNN_Super-ResolutionConvolutionalNeuralNetwork/blob/main/training_figures/Training_MSE.png "SRCNN training (MSE per epoch)")
+![alt text](https://github.com/KamilBartosik/SRCNN_Super-ResolutionConvolutionalNeuralNetwork/blob/main/training_figures/Training_PSNR.png "SRCNN training (PSNR per epoch)")
 
 Difference of PSNR between train and test sets:
 Scale|Image nb in dataset|PSNR [dB] training|PSNR [dB] test
