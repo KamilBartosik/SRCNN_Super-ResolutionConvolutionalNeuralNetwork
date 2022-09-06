@@ -9,7 +9,28 @@ Thesis got awarded with 2nd place in nationwide competition for the best thesis 
 Point of the experiment was to create algorithm that is capable of enhancing the aerial images' spatial resolution from GSD=10cm to GSD=5cm (scale=2). Moreover the scales 3, 4, 6 were also tested but with smaller dataset. To achieve such thing, architecture of the created network was a bit upraged convolutional neural network that instead of returing some detection/categorization result returned an input image with enhanced resolution. My work was inspired by [Dong et al., 2015](https://arxiv.org/abs/1501.00092).
 
 ## Training and performance
-TBD
+For the main task of image resolution enhancement by the scale of 2 the five different datasets' sizes were used (315, 450, 1350, 2700, 4500 images). Thanks to that the figure that shows how resolution enhancement is getting better (PSNR [dB]) over bigger datasets were created:
+![alt text](path to an image: Wykres_tren_zdj.png "Size of the dataset")
+
+The process of the best performing training with scale of 2 and dataset of 4500 images (600x450 px):
+![alt text](path to an image: INZ_6_1_MSE.png "SRCNN training (MSE per epoch)")
+![alt text](path to an image: INZ_6_1_PSNR.png "SRCNN training (PSNR per epoch)")
+
+Difference of PSNR between train and test sets:
+Scale|Image nb in dataset|PSNR [dB] training|PSNR [dB] test
+:---: | :---: | :---: | :---:
+2 | 4500 | 37.12 | 36.43
+3 | 450 | 32.26 | 32.02
+4 | 450 | 30.44 | 30.65
+6 | 450 | 28.23 | 28.72
+
+Numeric results (PSNR and SSIM):
+Scale|PSNR [dB] input|SSIM input|PSNR [dB] output|SSIM output
+:---: | :---: | :---: | :---: | :---:
+2 | 34.41 | 0.8151 | 36.43 | 0.8439 
+3 | 30.45 | 0.5792 | 32.02 | 0.6307
+4 | 28.61 | 0.4997 | 30.65 | 0.5100
+6 | 26.30 | 0.3213 | 28.72 | 0.3313
 
 ## Results
 TBD
