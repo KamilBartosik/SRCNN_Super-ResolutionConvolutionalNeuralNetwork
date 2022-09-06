@@ -15,8 +15,7 @@ For the main task of image resolution enhancement by the scale of 2 the five dif
 
 The process of the best performing training with scale of 2 and dataset of 4500 images (600x450 px):
 
-![alt text](https://github.com/KamilBartosik/SRCNN_Super-ResolutionConvolutionalNeuralNetwork/blob/main/training_figures/Training_MSE.png "SRCNN training (MSE per epoch)")
-![alt text](https://github.com/KamilBartosik/SRCNN_Super-ResolutionConvolutionalNeuralNetwork/blob/main/training_figures/Training_PSNR.png "SRCNN training (PSNR per epoch)")
+![alt text](https://github.com/KamilBartosik/SRCNN_Super-ResolutionConvolutionalNeuralNetwork/blob/main/training_figures/Training_MSE.png "SRCNN training (MSE per epoch)") ![alt text](https://github.com/KamilBartosik/SRCNN_Super-ResolutionConvolutionalNeuralNetwork/blob/main/training_figures/Training_PSNR.png "SRCNN training (PSNR per epoch)")
 
 Difference of PSNR between train and test sets:
 Scale|Image nb in dataset|PSNR [dB] training|PSNR [dB] test
@@ -35,4 +34,37 @@ Scale|PSNR [dB] input|SSIM input|PSNR [dB] output|SSIM output
 6 | 26.30 | 0.3213 | 28.72 | 0.3313
 
 ## Results
-TBD
+### Image 1
+Original image (GSD = 5cm):
+
+![alt text](path "Original image GSD=5 cm")
+
+Input image to SRCNN (GSD = 10cm after bicubic interpolation):
+
+![alt text](path "Input image GSD=10 cm after bicubic interpolation")
+**PSNR = 36.80 dB, SSIM = 0.8138**
+
+Output image with enhanced resolution:
+
+![alt text](path "Output image with enhanced resolution")
+**PSNR = 39.66 dB, SSIM = 0.8588**
+
+### Image 2
+Original image (GSD = 5cm):
+
+![alt text](path "Original image GSD=5 cm")
+
+Input image to SRCNN (GSD = 10cm after bicubic interpolation):
+
+![alt text](path "Input image GSD=10 cm after bicubic interpolation")
+**PSNR = 33.26 dB, SSIM = 0.8473**
+
+Output image with enhanced resolution:
+
+![alt text](path "Output image with enhanced resolution")
+**PSNR = 35.43 dB, SSIM = 0.8709**
+
+### Image 3
+From right to left: original image (GSD = 5cm), input image to SRCNN (GSD = 10cm after bicubic interpolation) [**PSNR = 35.13 dB, SSIM = 0.7739**], output image with enhanced resolution [**PSNR = 38.53 dB, SSIM = 0.7864**]
+
+![alt text](path "Original image GSD=5 cm") ![alt text](path "Input image GSD=10 cm after bicubic interpolation") ![alt text](path "Output image with enhanced resolution")
