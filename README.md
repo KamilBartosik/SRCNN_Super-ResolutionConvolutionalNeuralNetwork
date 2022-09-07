@@ -34,6 +34,8 @@ Scale|PSNR [dB] input|SSIM input|PSNR [dB] output|SSIM output
 6 | 26.30 | 0.3213 | 28.72 | 0.3313
 
 ## Results
+**_For scales 3, 4 and 6 SRCNN was trained only on 450 images (for scale 2 it was 4500)_**
+
 ### Image 1 (scale 2)
 Original image (GSD = 5cm):
 
@@ -69,5 +71,62 @@ From left to right: original image (GSD = 5cm), input image to SRCNN (GSD = 10cm
 
 ![alt text](https://github.com/KamilBartosik/SRCNN_Super-ResolutionConvolutionalNeuralNetwork/blob/main/results_s2/3a.jpg "Original image GSD=5 cm") ![alt text](https://github.com/KamilBartosik/SRCNN_Super-ResolutionConvolutionalNeuralNetwork/blob/main/results_s2/3b.jpg "Input image GSD=10 cm after bicubic interpolation") ![alt text](https://github.com/KamilBartosik/SRCNN_Super-ResolutionConvolutionalNeuralNetwork/blob/main/results_s2/3c.jpg "Output image with enhanced resolution")
 
-### Rest of the results will be added in the future
-TBD
+### Image 1 (scale 3)
+Original image (GSD = 5cm):
+
+![alt text](https://github.com/KamilBartosik/SRCNN_Super-ResolutionConvolutionalNeuralNetwork/blob/main/results_s3/4a.jpg "Original image GSD=5 cm")
+
+Input image to SRCNN (GSD = 15cm after bicubic interpolation):
+
+![alt text](https://github.com/KamilBartosik/SRCNN_Super-ResolutionConvolutionalNeuralNetwork/blob/main/results_s3/4b.jpg "Input image GSD=10 cm after bicubic interpolation")
+**PSNR = 31.33 dB, SSIM = 0.6633**
+
+Output image with enhanced resolution:
+
+![alt text](https://github.com/KamilBartosik/SRCNN_Super-ResolutionConvolutionalNeuralNetwork/blob/main/results_s3/4c.jpg "Output image with enhanced resolution")
+**PSNR = 32.90 dB, SSIM = 0.6694**
+
+### Image 2 (scale 3)
+Original image (GSD = 5cm):
+
+![alt text](https://github.com/KamilBartosik/SRCNN_Super-ResolutionConvolutionalNeuralNetwork/blob/main/results_s3/6a.jpg "Original image GSD=5 cm")
+
+Input image to SRCNN (GSD = 15cm after bicubic interpolation):
+
+![alt text](https://github.com/KamilBartosik/SRCNN_Super-ResolutionConvolutionalNeuralNetwork/blob/main/results_s3/6b.jpg "Input image GSD=10 cm after bicubic interpolation")
+**PSNR = 28.19 dB, SSIM = 0.6706**
+
+Output image with enhanced resolution:
+
+![alt text](https://github.com/KamilBartosik/SRCNN_Super-ResolutionConvolutionalNeuralNetwork/blob/main/results_s3/6c.jpg "Output image with enhanced resolution")
+**PSNR = 29.41 dB, SSIM = 0.6938**
+
+### Image 1 (scale 4)
+Original image (GSD = 5cm):
+
+![alt text](https://github.com/KamilBartosik/SRCNN_Super-ResolutionConvolutionalNeuralNetwork/blob/main/results_s4/5a.jpg "Original image GSD=5 cm")
+
+Input image to SRCNN (GSD = 20cm after bicubic interpolation):
+
+![alt text](https://github.com/KamilBartosik/SRCNN_Super-ResolutionConvolutionalNeuralNetwork/blob/main/results_s4/5b.jpg "Input image GSD=10 cm after bicubic interpolation")
+**PSNR = 29.16 dB, SSIM = 0.5559**
+
+Output image with enhanced resolution:
+
+![alt text](https://github.com/KamilBartosik/SRCNN_Super-ResolutionConvolutionalNeuralNetwork/blob/main/results_s4/5c.jpg "Output image with enhanced resolution")
+**PSNR = 31.89 dB, SSIM = 0.5754**
+
+### Image 2 (scale 4)
+Original image (GSD = 5cm):
+
+![alt text](https://github.com/KamilBartosik/SRCNN_Super-ResolutionConvolutionalNeuralNetwork/blob/main/results_s4/7a.jpg "Original image GSD=5 cm")
+
+Input image to SRCNN (GSD = 20cm after bicubic interpolation):
+
+![alt text](https://github.com/KamilBartosik/SRCNN_Super-ResolutionConvolutionalNeuralNetwork/blob/main/results_s4/7b.jpg "Input image GSD=10 cm after bicubic interpolation")
+**PSNR = 25.92 dB, SSIM = 0.5495**
+
+Output image with enhanced resolution:
+
+![alt text](https://github.com/KamilBartosik/SRCNN_Super-ResolutionConvolutionalNeuralNetwork/blob/main/results_s4/7c.jpg "Output image with enhanced resolution")
+**PSNR = 27.14 dB, SSIM = 0.5678**
